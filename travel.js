@@ -1429,13 +1429,14 @@ var records=[{
     Id : "C1_397000000A_000190"
     }]
 
-
+console.log(records.Ticketinfo);
 var recordLen=records.length //JSON長度
+console.log(recordLen);
 var noRepeatDis //因為之後還會用到所以在全域進行宣告
 
 
 //選單更改
-var el_select=document.querySelector('.wrapper .header-top select')
+// var el_select=document.querySelector('.wrapper .header-top select')
 // console.log(el_select)
 
 
@@ -1446,11 +1447,11 @@ function updateMenu(){
     for(var i=0;i<recordLen;i++){
         allDataDis.push(records[i].Zone)
     }
-    // console.log(allDataDis)
+    console.log(allDataDis)
     
     //抓出不重複的zone，並丟到noRepeatDis上
     noRepeatDis = Array.from(new Set(allDataDis))
-    // console.log(noRepeatDis)
+    console.log(noRepeatDis)
 
     //把noRepeatDis的資料丟回HTML的zoneSelect上
     var str='';
@@ -1479,3 +1480,35 @@ function updateTitle(e){
     }
     document.querySelector('.content_title').innerHTML=titleStr
 }
+
+//title的改變觸發內容的變動
+var content = document.querySelector('.box')
+
+option.addEventListener('change',updateContent) //改變許澤的行政區時觸發內容變換
+
+function updateContent(e){
+    var select=e.target.value //選擇到的行政區
+    // console.log(e.target.value);
+
+    //內容變動
+    var contentStr = ''
+    for(var i=0;i<records.length;i++){
+        if(select == records[i].Zone){
+            contentStr += `<div class="box-top">
+            <div class='pic' style=background-image:url(${records[i].Picture1})></div>
+            <div class="instruction">
+                <p id="name">${records[i].Name}</p>
+                <p id="location">${records[i].Zone}</p>
+            </div>
+        </div>
+        <ul class="box-bottom">
+            <li class="info"><img src='assets/icons_clock.png' class="time"><p>${records[i].Opentime}</p></li>
+            <li class="info"><img src="assets/icons_pin.png" class="location"><p>${records[i].Add}</p></li>
+            <li class="info"><img src='assets/icons_phone.png' class="phone"><p>${records[i].Tel}</p></li>
+            <li class="info"><img src="assets/icons_tag.png" class='tag'><p>${records[i].Ticketinfo}</p></li>
+        </ul>`
+        }
+    }
+    content.innerHTML = contentStr
+}
+

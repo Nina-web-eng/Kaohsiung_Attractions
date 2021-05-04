@@ -16,32 +16,7 @@
                 
                 <!-- 選單 -->
                 <select name="color" class="zoneSelect">
-                    <!-- <option value="請選擇行政區">--請選擇行政區--</option>
-                    <option value='三民區'>三民區</option>
-                    <option value='內門區'>內門區</option>
-                    <option value='美濃區'>美濃區</option>
-                    <option value='大樹區'>大樹區</option>
-                    <option value='小港區'>小港區</option>
-                    <option value='六龜區'>六龜區</option>
-                    <option value='仁武區'>仁武區</option>
-                    <option value='左營區'>左營區</option>
-                    <option value='田寮區'>田寮區</option>
-                    <option value='永安區'>永安區</option>
-                    <option value='甲仙區'>甲仙區</option>
-                    <option value='鼓山區'>鼓山區</option>
-                    <option value='杉林區'>杉林區</option>
-                    <option value='那瑪夏'>那瑪夏</option>
-                    <option value='岡山區'>岡山區</option>
-                    <option value='旗津區'>旗津區</option>
-                    <option value='高雄市'>高雄市</option>
-                    <option value='前鎮區'>前鎮區</option>
-                    <option value='新興區'>新興區</option>
-                    <option value='苓雅區'>苓雅區</option>
-                    <option value='茂林區'>茂林區</option>
-                    <option value='梓官區'>梓官區</option>
-                    <option value='桃源區'>桃源區</option>
-                    <option value='楠梓區'>楠梓區</option> -->
-                    
+                    <!-- 用JS在這邊放入下拉選單 -->
                 </select>
 
             </div> 
@@ -65,23 +40,25 @@
             <div class="container">
                 <!-- 包裹整個景點介紹的區塊 -->
                 <div class="content-area">
+                    
                     <div class="box1 box">
                         <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
+                            <div class='pic' style=background-image:url()></div>
                             <div class="instruction">
                                 <p id="name">高雄願景館</p>
                                 <p id="location">三民區</p>
                             </div>
                         </div>
-                        <ul class="box-bottom">
-                            <li><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
+                         <ul class="box-bottom">
+                            <li class="info"><img src='assets/icons_clock.png' class="time"><p>全天候開放</p></li>
+                            <li class="info"><img src="assets/icons_pin.png" class="location"><p>高雄市</p></li>
+                            <li class="info"><img src='assets/icons_phone.png' class="phone"><p>電話</p></li>
+                            <li class="info"><img src="assets/icons_tag.png" class='tag'><p>免費參觀</p></li>
                         </ul>
                     </div>
                 
-                    <div class="box">
+
+                    <!--<div class="box">
                         <div class="box-top">
                             <img src="https://khh.travel/image/221/640x480" class="scenery">
                             <p id="name">高雄願景館</p>
@@ -94,108 +71,28 @@
                             <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
                         </ul>
                     </div>
-                    <div class="box1 box">
-                        <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
-                            <p id="name">高雄願景館</p>
-                            <p id="location">三民區</p>
-                        </div>
-                        <ul class="box-bottom">
-                            <li ><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
-                        </ul>
-                    </div>
+                    
                 
-                    <div class="box">
-                        <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
-                            <p id="name">高雄願景館</p>
-                            <p id="location">三民區</p>
-                        </div>
-                        <ul class="box-bottom">
-                            <li ><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
-                        </ul>
-                    </div>
-                    <div class="box1 box">
-                        <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
-                            <p id="name">高雄願景館</p>
-                            <p id="location">三民區</p>
-                        </div>
-                        <ul class="box-bottom">
-                            <li ><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
-                        </ul>
-                    </div>
-                
-                    <div class="box">
-                        <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
-                            <p id="name">高雄願景館</p>
-                            <p id="location">三民區</p>
-                        </div>
-                        <ul class="box-bottom">
-                            <li ><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
-                        </ul>
-                    </div>
-                    <div class="box1 box">
-                        <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
-                            <p id="name">高雄願景館</p>
-                            <p id="location">三民區</p>
-                        </div>
-                        <ul class="box-bottom">
-                            <li ><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
-                        </ul>
-                    </div>
-                
-                    <div class="box">
-                        <div class="box-top">
-                            <img src="https://khh.travel/image/221/640x480" class="scenery">
-                            <p id="name">高雄願景館</p>
-                            <p id="location">三民區</p>
-                        </div>
-                        <ul class="box-bottom">
-                            <li><img src='assets/icons_clock.png' class="time">全天候開放</li>
-                            <li><img src="assets/icons_pin.png" class="location">高雄市</li>
-                            <li><img src='assets/icons_phone.png' class="phone">電話</li>
-                            <li><img src="assets/icons_tag.png" class='tag'>免費參觀</li>
-                        </ul>
-                    </div>
-                
-                    <!-- 景點介紹的區塊到這邊 -->
-                </div>
+                    
+                 </div> -->
 
                 <!-- page部分 -->
-                <div class="pages">
+                <!-- <div class="pages">
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
                     <a href="#">5</a>
                 </div>
-
+ 
                 
             </div>
-            <!-- 到這邊的div包含著資料來源 -->
-            <div class="footer">
+
+            到這邊的div包含著資料來源 -->
+            <!-- <div class="footer">
                 <p class="webName">高雄旅遊網</p>
                 <p class="inforfrom">資料來源:高雄市政府</p>
             </div>
-        <!-- 包含標題高雄市行政區+景點介紹的整個區塊 -->
         </div> 
     </div>
 
