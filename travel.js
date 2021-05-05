@@ -1,4 +1,4 @@
-var records=[{
+var allData=[{
     Ticketinfo : "免費參觀" ,
     Zone : "三民區" ,
     Px : "120.32707" ,
@@ -1429,29 +1429,24 @@ var records=[{
     Id : "C1_397000000A_000190"
     }]
 
-console.log(records.Ticketinfo);
-var recordLen=records.length //JSON長度
-console.log(recordLen);
+// console.log(allData.length)
+var allLen=allData.length //JSON資料長度
+// console.log(recordLen);
 var noRepeatDis //因為之後還會用到所以在全域進行宣告
 
-
-//選單更改
-// var el_select=document.querySelector('.wrapper .header-top select')
-// console.log(el_select)
 
 
 //下拉選單更新
 function updateMenu(){
-    //先抓出全部的zone
-    var allDataDis=[];
-    for(var i=0;i<recordLen;i++){
-        allDataDis.push(records[i].Zone)
-    }
-    console.log(allDataDis)
     
-    //抓出不重複的zone，並丟到noRepeatDis上
+    //先抓出全部的zone放進allDataDis
+    var allDataDis=[];
+    for(var i=0;i<allLen;i++){
+        allDataDis.push(allData[i].Zone)
+    }
+    
+    //抓出不重複的zone，並放進noRepeatDis上
     noRepeatDis = Array.from(new Set(allDataDis))
-    console.log(noRepeatDis)
 
     //把noRepeatDis的資料丟回HTML的zoneSelect上
     var str='';
@@ -1460,7 +1455,8 @@ function updateMenu(){
     for (var i=0;i<noRepeatDis.length;i++){
         str += `<option value="${noRepeatDis[i]}">${noRepeatDis[i]}</option>`
         }
-    document.querySelector('.zoneSelect').innerHTML=str;}
+    document.querySelector('.zoneSelect').innerHTML=str
+}
 updateMenu()
 
 //event觸發title改變
