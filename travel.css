@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header{
+    width: 1024px;
+    height:380px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+.header #title{
+    width:265px;
+    height:40px;
+    padding: 89px 378.5px 48px 380.5px;
+    color: oldlace;
+    font-size: 40px;
+    line-height: 41px;
+    letter-spacing: 3.89px;
+}
+.header .zoneSelect{
+    width:452px;
+    height:48px;
+    margin:48px 279px 0px 293px;
+    font-size: 18px;
+}
+option{
+    width:111px;
+    height:21px;
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+}
+.zoneclass{
+    width:800px;
+    height:112px;
+    margin:0 auto;
+    margin-top: 79px;
+    /* padding:-29px 112px 0 112px; */
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+}
+.zoneclass h3{
+font-size:18px;
+width:91px ;
+padding:20px 683px 0px 26px; 
+/* font-family: AppleSystemUIFont; */
+}
+.btn{
+    width:130px;
+    height:42px;
+    /* margin:14px 30px 18px 30px; */
+    font-size: 20px;
+    color:#FFFFFF;
+    border-radius: 5px;
+    border:none;
+}
+.btn1{
+    background-color: #8A82CC;
+    margin:14px 23px 18px 51px;
+}
+.btn2{
+    background-color: #FFA782;
+    margin:14px 30px 18px 0px;
+
+}
+.btn3{
+    background-color: #F5D005;
+    margin:14px 30px 18px 0px;
+}
+.btn4{
+    background-color: #559AC8 ;
+    margin:14px 0px 18px 0px;
+}
+.button_bottom{
+    width:24px;
+    height:24px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 228px;
+    border: 2px solid #559AC8;
+    border-radius: 100px;
+}
+.button_bottom img{
+    position: relative;
+    top:2px;
+    right:-4px;
+}
+.button_bottom::before{
+    content: '';
+    display: block;
+    position: relative;
+    top: 12px;
+    right:500px;
+    border-top: 1px dashed #559AC8;
+    width:500px;
+    height:1px;
+}
+.button_bottom::after{
+    content:'';
+    display: block;
+    position:relative;
+    top: -7px;
+    left:25px;
+    border-top:1px dashed #559AC8;
+    width:500px;
+    height:1px;
+}
+
+/* 旅遊資訊內容 */
+.container{
+    width: 944px;
+    margin:0 auto;
+    height:auto;
+    margin-top: 24px;
+}
+.content h2{ /*標題高雄行政區*/
+    text-align: center;
+    font-size: 36px;
+    color:#8A82CC;
+    padding-top: 89px;
+    padding-bottom: 24px;
+}
+
+.content-area{/*資訊區*/
+    width:944px;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.box{
+    width:464px;
+    height: 273px;
+    float:left;
+    margin-bottom: 36px;
+}
+.box1{
+    margin-right: 16px;
+}
+.container .box-top{/*圖片部分包含景點名稱位置*/
+    position: relative;
+}
+.box-top img{
+    display:block;
+    width:100%;
+    height:155px;
+    object-fit: cover;
+}
+
+.box-top #name{
+    position: absolute;
+    bottom: 14px;
+    left: 22px;
+    font-size: 24px;
+    color:#FFFFFF
+}
+.box-top #location{
+    /* box-top中的子元素 */
+    position: absolute; 
+    bottom: 11px;
+    right:24px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.box ul{
+    margin:0;
+}
+.box li{
+    position:relative;
+    font-size: 16px;
+    color: #000;
+    padding-top: 16px;
+    padding-left: 50px;
+}
+.box li img{
+    position:absolute;
+}
+.box li .time{
+    width:18px;
+    height:18px;
+    left:9px;
+}
+.box li .location{
+    width:16px;
+    height:20px;
+    left:10px;
+}
+.box li .phone{
+    width:12px;
+    height:20px;
+    left:12px;
+}
+.box li .tag{
+    width:20px;
+    height:20px;
+    left:8px;
+}
+.container .pages{
+    text-align: center;
+    margin-bottom: 44px;
+}
+.container .pages a{
+    color:#aaa;
+    margin-right: 24px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.content .footer{
+    background-color :#559ac8;
+    width:1024px;
+    height: 90px;
+    margin: 0 auto;
+}
+.content .footer p{
+    text-align: center;
+    font-size: 14px;
+}
+.content .footer .webName{
+    color:#FFFFFF;
+    padding-top: 24px;
+}
+.content .footer .inforfrom{
+    color:#FFD366;
+    padding-top: 15px ;
+}
